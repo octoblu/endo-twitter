@@ -1,0 +1,23 @@
+{
+  type: 'object'
+  required: ['metadata', 'data']
+  properties:
+    data:
+      type: 'array'
+      items:
+        type: 'object'
+        required: ['createdAt', 'type', 'username']
+        properties:
+          createdAt:
+            type: 'string'
+            format: 'date-time'
+          description:
+            type: 'string'
+            description: 'The description of the event. Could be a commit message, repository description, etc.'
+          type:
+            type: 'string'
+            description: 'The event type. (ex: "CreateEvent", "PushEvent")'
+          username:
+            type: 'string'
+            description: 'The github username that performed the event. (ex: "sqrtofsaturn")'
+}
