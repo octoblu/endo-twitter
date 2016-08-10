@@ -1,0 +1,12 @@
+{
+  type: 'object'
+  title: '{{title}}'
+  'x-group-name': '{{groupName}}'
+  required: ['data']
+  properties:
+    data:
+      required: [{{requiredProperties}}]
+      type: 'object'
+      properties:
+{{properties}}
+}

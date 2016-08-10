@@ -1,0 +1,11 @@
+{
+  angular: [  
+    'data.name'
+    'data.contained_within'
+    'data.token'
+    'data.lat'
+    'data.long'
+    'data.attribute:street_address'
+    'data.callback'
+  ]
+}

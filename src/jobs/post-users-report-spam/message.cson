@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'POST users/report_spam'
+  'x-group-name': 'users'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The ID or screen_name of the user you want to report as a spammer.'
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user you want to report as a spammer.'
+
+}

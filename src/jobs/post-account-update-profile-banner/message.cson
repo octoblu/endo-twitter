@@ -1,0 +1,32 @@
+{
+  type: 'object'
+  title: 'POST account/update_profile_banner'
+  'x-group-name': 'account'
+  required: ['data']
+  properties:
+    data:
+      required: ['banner']
+      type: 'object'
+      properties:
+        'banner':
+          type: 'string'
+          title: 'Banner'
+          description: 'The Base64-encoded or raw image data being uploaded as the user’s new profile banner.'
+        'width':
+          type: 'string'
+          title: 'Width'
+          description: 'The width of the preferred section of the image being uploaded in pixels.'
+        'height':
+          type: 'string'
+          title: 'Height'
+          description: 'The height of the preferred section of the image being uploaded in pixels.'
+        'offset_left':
+          type: 'string'
+          title: 'Offset Left'
+          description: 'The number of pixels by which to offset the uploaded image from the left.'
+        'offset_top':
+          type: 'string'
+          title: 'Offset Top'
+          description: 'The number of pixels by which to offset the uploaded image from the top.'
+
+}

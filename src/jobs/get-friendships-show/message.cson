@@ -1,0 +1,28 @@
+{
+  type: 'object'
+  title: 'GET friendships/show'
+  'x-group-name': 'friendships'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'source_id':
+          type: 'string'
+          title: 'Source ID'
+          description: 'The user_id of the subject user.'
+        'source_screen_name':
+          type: 'string'
+          title: 'Source Screen Name'
+          description: 'The screen_name of the subject user.'
+        'target_id':
+          type: 'string'
+          title: 'Target ID'
+          description: 'The user_id of the target user.'
+        'target_screen_name':
+          type: 'string'
+          title: 'Target Screen Name'
+          description: 'The screen_name of the target user.'
+
+}

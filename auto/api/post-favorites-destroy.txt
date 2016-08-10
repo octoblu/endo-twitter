@@ -1,0 +1,205 @@
+  
+<!DOCTYPE html>
+<html dir="ltr"
+  xmlns:og=&quot;http://ogp.me/ns#&quot; lang="en" class="">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="twitter:image:height" content="500" />
+<meta name="twitter:image:width" content="500" />
+<meta name="twitter:url" content="https://dev.twitter.com/rest/reference/post/favorites/destroy" />
+<link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<script type="application/json" id="drupal-settings">{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gazebo_dev","theme_token":"5Wuaq6CAg93yAKSZ894M_UOKEC-N3G80pdCWsn6Rv6U"},"analyticsSettings":{"google":{"accounts":["UA-30775-44","UA-30775-16"],"options":{"customVars":{"dimension2":"1"},"customUrl":"","trackerUrl":"https:\/\/g.twimg.com\/googleanalytics\/analytics.js","domains":["dev.twitter.com"],"cross_domains":[],"displayAdvertisingFeatures":true}},"scribe":{"client":"gazebo"},"trackingPixel":{"pixel_ids":[]},"bing":false}}</script><meta name="google-site-verification" content="DsylEvTL7j64tY0IHBWbMN6pUvvKMIRl8usLs1sn2XQ" />
+<meta content="on" name="twitter:widgets:new-embed-design" />
+<meta content="on" name="twitter:widgets:csp" />
+<meta name="og:url" content="https://dev.twitter.com/rest/reference/post/favorites/destroy" />
+<meta name="og:image" content="https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png" />
+<meta name="og:description" content="Un-likes the status specified in the ID parameter as the authenticating user. Returns the un-liked status in the requested format when successful.
+This process invoked by this method is asynchronous. The immediately returned status may not indicate the resultant liked status of the Tweet. A 200 OK response from this method will indicate whether the intended action was successful or not." />
+<meta name="og:title" content="POST favorites/destroy" />
+<meta name="description" content="Un-likes the status specified in the ID parameter as the authenticating user. Returns the un-liked status in the requested format when successful.
+This process invoked by this method is asynchronous. The immediately returned status may not indicate the resultant liked status of the Tweet. A 200 OK response from this method will indicate whether the intended action was successful or not." />
+<link rel="shortlink" href="/node/819" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Un-likes the status specified in the ID parameter as the authenticating user. Returns the un-liked status in the requested format when successful.
+This process invoked by this method is asynchronous. The immediately returned status may not indicate the resultant liked status of the Tweet. A 200 OK response from this method will indicate whether the intended action was successful or not." />
+<meta name="og:site_name" content="Twitter Developers" />
+<link rel="canonical" href="https://dev.twitter.com/rest/reference/post/favorites/destroy" />
+<meta name="twitter:title" content="POST favorites/destroy" />
+<meta name="og:type" content="article" />
+
+    <title>POST favorites/destroy | Twitter Developers</title>
+    <link type="text/css" rel="stylesheet" href="https://g.twimg.com/css/b774942/css_26jRHMMCuvdWTE9NpN-pVLYvqWAjjnIFL6rvDsh5MHM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://g.twimg.com/css/b774942/css_Y_rYp5Zp2ETqQBWJcbCTJb03omhV0osaOMslZ_927ZE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://abs.twimg.com/font/gotham-narrow-v3.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://g.twimg.com/css/b774942/css__rOiZTCBuscnfvEnJw-_pXPK3v3PrChlAC7zARk220c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://g.twimg.com/css/b774942/css_ena-Fy7TMjwTiyFeouk2Q_f1tPj98xZSiZElGa8lx8w.css" media="all" />
+
+    <script type="text/javascript" src="https://g.twimg.com/js/b774942/js_kYMI6stYSsIRxnH5jlyWN3v76pk66IDAcsvBOk1W_qc.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_khfOAWT2z7QE7s9bNkw5afNKRe9w8PMP6gthYSvApG0.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_GwOn7zsvXJwUDS7-VhiFJrVpcBnFBk6AYl2sYoqLJCI.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_aX2iu8pTP4yy32AfhA-H8KZMM5IiCCP8Yx-eZ84lY6Q.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_Ykeg4PlP-G4rQQELDhsAuT35PbEAJ2e4KmhevqSWrJg.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_BsD1J0VYO_7sNrnLQ25AQi_96pz4TWChe8TDkeZN9vs.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/inline-js/adca7e6ab1c7f1559e86028a530b7f8c.js?obejvn"></script>
+
+  </head>
+
+  <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-819 node-type-api-doc i18n-en" >
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+    
+    <div class="Page Page--canopy is-narrow Page--basicStyles  Page--dev  Page--devDocumentation Page--apiDoc" >
+    <div class="Navigation Navigation--global">
+  <div class="Navigation-inner">
+    <ul class="Navigation-inner-list Navigation-inner-list--breadcrumb"><li class="NavigationItem NavigationItem--main NavigationItem--breadcrumb"><a class="NavigationItem-link" href="https://dev.twitter.com/home"></a></li><li class="NavigationItem NavigationItem--main NavigationItem--breadcrumb NavigationItem--withChildren"><a class="NavigationItem-link" href="https://dev.twitter.com/home">Developers</a><ul class="Navigation Navigation--sub"><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/overview">Documentation</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/discussions">Forums</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/overview/events">Events</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/blog">Blog</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/solutions">Solutions</a></li></ul></li><li class="NavigationItem NavigationItem--main NavigationItem--breadcrumb NavigationItem--withChildren"><a class="NavigationItem-link" href="https://dev.twitter.com/overview">Documentation</a><ul class="Navigation Navigation--sub"><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/overview/documentation">Overview</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/fabric/overview">Fabric</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/web/overview">Twitter for Websites</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/cards/overview">Cards</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/oauth">OAuth</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/rest/public">REST APIs</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/streaming/overview">Streaming APIs</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/ads/overview">Ads APIs</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="https://dev.twitter.com/mopub">MoPub</a></li></ul></li><li class="NavigationItem NavigationItem--main NavigationItem--breadcrumb"><a class="NavigationItem-link" href="https://dev.twitter.com/rest/public">REST APIs</a></li></ul><ul class="Navigation-inner-list Navigation-inner-list--side Navigation-inner-list--user"><li class="NavigationItem"><a class="NavigationItem-link" href="https://twitter.com/login">Sign in</a></li></ul><ul class="Navigation-inner-list Navigation-inner-list--side Navigation-inner-item--language"><li class="NavigationItem NavigationItem--language NavigationItem--withChildren"><a class="NavigationItem-link" href="">English</a><ul class="Navigation Navigation--sub"><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=zh-hans">简体中文</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=zh-hant">繁體中文</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=en">English</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=fr">Français</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=de">Deutsch</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=ja">日本語</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=ko">한국어</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=pt">Português, Brasil</a></li><li class="NavigationItem NavigationItem--sub"><a class="NavigationItem-link" href="/rest/reference/post/favorites/destroy?lang=es">Español</a></li></ul></li></ul><div class="Navigation-inner-item Navigation-inner-item--search"><form action="/" class="NavigationItem NavigationItem--search" method="get"><input type="text" name="search_block_form" placeholder="Search" class="NavigationItem-searchBox" /><button class="NavigationItem-submitButton">Search</button></form></div>  </div>
+</div>
+<div class=" Hero is-narrow Hero--dev"><div class="Hero-wrap"></div></div><section><div class="Page-messages"></div><div class="PageLayout  is-narrow PageLayout--leftColumn Grid"><div class="PageLayout-wrap"><div class="PageLayout-column PageLayout-leftColumn Grid-cell u-size4of12 u-sm-sizeFill u-md-sizeFill is-collapsible is-collapsed"><div class="PageLayout-column-collapseToggle"></div><aside class="SidebarFirst"><div class="region region-sidebar-first"><div class="SystemBlock" ><div class="menu-block-wrapper menu-block-feature-dev-docs-menu menu-name-main-menu parent-mlid-0 menu-level-2"><ul class="menu"><li class="first collapsed menu-mlid-536"><a href="/rest/tools/console" target="_blank">API Console Tool</a></li><li class="expanded active-trail menu-mlid-517"><a href="/rest/public" class="active-trail">Public API</a><ul class="menu"><li class="first leaf menu-mlid-548"><a href="/rest/public/search">The Search API</a></li><li class="leaf menu-mlid-518"><a href="/rest/public/search-by-place">The Search API: Tweets by Place</a></li><li class="leaf menu-mlid-579"><a href="/rest/public/timelines">Working with Timelines</a></li><li class="leaf menu-mlid-586"><a href="/rest/public/rate-limiting">API Rate Limits</a></li><li class="leaf menu-mlid-1162"><a href="/rest/public/rate-limits">API Rate Limits: Chart</a></li><li class="leaf menu-mlid-846"><a href="/rest/reference/get/statuses/mentions_timeline">GET statuses/<wbr>mentions_timeline</a></li><li class="leaf menu-mlid-847"><a href="/rest/reference/get/statuses/user_timeline">GET statuses/<wbr>user_timeline</a></li><li class="leaf menu-mlid-856"><a href="/rest/reference/get/statuses/home_timeline">GET statuses/<wbr>home_timeline</a></li><li class="leaf menu-mlid-939"><a href="/rest/reference/get/statuses/retweets_of_me">GET statuses/<wbr>retweets_of_me</a></li><li class="leaf menu-mlid-848"><a href="/rest/reference/get/statuses/retweets/%3Aid">GET statuses/<wbr>retweets/<wbr>:id</a></li><li class="leaf menu-mlid-849"><a href="/rest/reference/get/statuses/show/%3Aid">GET statuses/<wbr>show/<wbr>:id</a></li><li class="leaf menu-mlid-850"><a href="/rest/reference/post/statuses/destroy/%3Aid">POST statuses/<wbr>destroy/<wbr>:id</a></li><li class="leaf menu-mlid-851"><a href="/rest/reference/post/statuses/update">POST statuses/<wbr>update</a></li><li class="leaf menu-mlid-852"><a href="/rest/reference/post/statuses/retweet/%3Aid">POST statuses/<wbr>retweet/<wbr>:id</a></li><li class="leaf menu-mlid-2150"><a href="/rest/reference/post/statuses/unretweet/%3Aid" title="Unretweet">POST statuses/<wbr>unretweet/<wbr>:id</a></li><li class="leaf menu-mlid-854"><a href="/rest/reference/post/statuses/update_with_media">POST statuses/<wbr>update_with_media</a></li><li class="leaf menu-mlid-855"><a href="/rest/reference/get/statuses/oembed">GET statuses/<wbr>oembed</a></li><li class="leaf menu-mlid-988"><a href="/rest/reference/get/statuses/retweeters/ids">GET statuses/<wbr>retweeters/<wbr>ids</a></li><li class="leaf menu-mlid-1039"><a href="/rest/reference/get/statuses/lookup">GET statuses/<wbr>lookup</a></li><li class="leaf menu-mlid-858"><a href="/rest/reference/get/direct_messages/sent">GET direct_messages/<wbr>sent</a></li><li class="leaf menu-mlid-859"><a href="/rest/reference/get/direct_messages/show">GET direct_messages/<wbr>show</a></li><li class="leaf menu-mlid-896"><a href="/rest/reference/get/search/tweets">GET search/<wbr>tweets</a></li><li class="leaf menu-mlid-857"><a href="/rest/reference/get/direct_messages">GET direct_messages</a></li><li class="leaf menu-mlid-860"><a href="/rest/reference/post/direct_messages/destroy">POST direct_messages/<wbr>destroy</a></li><li class="leaf menu-mlid-861"><a href="/rest/reference/post/direct_messages/new">POST direct_messages/<wbr>new</a></li><li class="leaf menu-mlid-845"><a href="/rest/reference/get/friendships/no_retweets/ids">GET friendships/<wbr>no_retweets/<wbr>ids</a></li><li class="leaf menu-mlid-915"><a href="/rest/reference/get/friends/ids">GET friends/<wbr>ids</a></li><li class="leaf menu-mlid-916"><a href="/rest/reference/get/followers/ids">GET followers/<wbr>ids</a></li><li class="leaf menu-mlid-921"><a href="/rest/reference/get/friendships/incoming">GET friendships/<wbr>incoming</a></li><li class="leaf menu-mlid-922"><a href="/rest/reference/get/friendships/outgoing">GET friendships/<wbr>outgoing</a></li><li class="leaf menu-mlid-923"><a href="/rest/reference/post/friendships/create">POST friendships/<wbr>create</a></li><li class="leaf menu-mlid-924"><a href="/rest/reference/post/friendships/destroy">POST friendships/<wbr>destroy</a></li><li class="leaf menu-mlid-925"><a href="/rest/reference/post/friendships/update">POST friendships/<wbr>update</a></li><li class="leaf menu-mlid-931"><a href="/rest/reference/get/friendships/show">GET friendships/<wbr>show</a></li><li class="leaf menu-mlid-970"><a href="/rest/reference/get/friends/list">GET friends/<wbr>list</a></li><li class="leaf menu-mlid-971"><a href="/rest/reference/get/followers/list">GET followers/<wbr>list</a></li><li class="leaf menu-mlid-920"><a href="/rest/reference/get/friendships/lookup">GET friendships/<wbr>lookup</a></li><li class="leaf menu-mlid-862"><a href="/rest/reference/get/account/settings">GET account/<wbr>settings</a></li><li class="leaf menu-mlid-863"><a href="/rest/reference/get/account/verify_credentials">GET account/<wbr>verify_credentials</a></li><li class="leaf menu-mlid-864"><a href="/rest/reference/post/account/settings">POST account/<wbr>settings</a></li><li class="leaf menu-mlid-866"><a href="/rest/reference/post/account/update_profile">POST account/<wbr>update_profile</a></li><li class="leaf menu-mlid-869"><a href="/rest/reference/post/account/update_profile_image">POST account/<wbr>update_profile_image</a></li><li class="leaf menu-mlid-870"><a href="/rest/reference/get/blocks/list">GET blocks/<wbr>list</a></li><li class="leaf menu-mlid-871"><a href="/rest/reference/get/blocks/ids">GET blocks/<wbr>ids</a></li><li class="leaf menu-mlid-872"><a href="/rest/reference/post/blocks/create">POST blocks/<wbr>create</a></li><li class="leaf menu-mlid-873"><a href="/rest/reference/post/blocks/destroy">POST blocks/<wbr>destroy</a></li><li class="leaf menu-mlid-911"><a href="/rest/reference/get/users/lookup">GET users/<wbr>lookup</a></li><li class="leaf menu-mlid-914"><a href="/rest/reference/get/users/show">GET users/<wbr>show</a></li><li class="leaf menu-mlid-917"><a href="/rest/reference/get/users/search">GET users/<wbr>search</a></li><li class="leaf menu-mlid-940"><a href="/rest/reference/post/account/remove_profile_banner">POST account/<wbr>remove_profile_banner</a></li><li class="leaf menu-mlid-941"><a href="/rest/reference/post/account/update_profile_banner">POST account/<wbr>update_profile_banner</a></li><li class="leaf menu-mlid-942"><a href="/rest/reference/get/users/profile_banner">GET users/<wbr>profile_banner</a></li><li class="leaf menu-mlid-1040"><a href="/rest/reference/post/mutes/users/create">POST mutes/<wbr>users/<wbr>create</a></li><li class="leaf menu-mlid-1049"><a href="/rest/reference/post/mutes/users/destroy">POST mutes/<wbr>users/<wbr>destroy</a></li><li class="leaf menu-mlid-1050"><a href="/rest/reference/get/mutes/users/ids">GET mutes/<wbr>users/<wbr>ids</a></li><li class="leaf menu-mlid-1051"><a href="/rest/reference/get/mutes/users/list">GET mutes/<wbr>users/<wbr>list</a></li><li class="leaf menu-mlid-895"><a href="/rest/reference/get/users/suggestions/%3Aslug">GET users/<wbr>suggestions/<wbr>:slug</a></li><li class="leaf menu-mlid-897"><a href="/rest/reference/get/users/suggestions">GET users/<wbr>suggestions</a></li><li class="leaf menu-mlid-899"><a href="/rest/reference/get/users/suggestions/%3Aslug/members">GET users/<wbr>suggestions/<wbr>:slug/<wbr>members</a></li><li class="leaf menu-mlid-932"><a href="/rest/reference/get/favorites/list">GET favorites/<wbr>list</a></li><li class="leaf active-trail active menu-mlid-933"><a href="/rest/reference/post/favorites/destroy" class="active-trail active">POST favorites/<wbr>destroy</a></li><li class="leaf menu-mlid-934"><a href="/rest/reference/post/favorites/create">POST favorites/<wbr>create</a></li><li class="leaf menu-mlid-885"><a href="/rest/reference/get/lists/list">GET lists/<wbr>list</a></li><li class="leaf menu-mlid-886"><a href="/rest/reference/get/lists/statuses">GET lists/<wbr>statuses</a></li><li class="leaf menu-mlid-887"><a href="/rest/reference/post/lists/members/destroy">POST lists/<wbr>members/<wbr>destroy</a></li><li class="leaf menu-mlid-888"><a href="/rest/reference/get/lists/memberships">GET lists/<wbr>memberships</a></li><li class="leaf menu-mlid-890"><a href="/rest/reference/get/lists/subscribers">GET lists/<wbr>subscribers</a></li><li class="leaf menu-mlid-891"><a href="/rest/reference/post/lists/subscribers/create">POST lists/<wbr>subscribers/<wbr>create</a></li><li class="leaf menu-mlid-892"><a href="/rest/reference/get/lists/subscribers/show">GET lists/<wbr>subscribers/<wbr>show</a></li><li class="leaf menu-mlid-893"><a href="/rest/reference/post/lists/subscribers/destroy">POST lists/<wbr>subscribers/<wbr>destroy</a></li><li class="leaf menu-mlid-894"><a href="/rest/reference/post/lists/members/create_all">POST lists/<wbr>members/<wbr>create_all</a></li><li class="leaf menu-mlid-898"><a href="/rest/reference/get/lists/members/show">GET lists/<wbr>members/<wbr>show</a></li><li class="leaf menu-mlid-900"><a href="/rest/reference/get/lists/members">GET lists/<wbr>members</a></li><li class="leaf menu-mlid-901"><a href="/rest/reference/post/lists/members/create">POST lists/<wbr>members/<wbr>create</a></li><li class="leaf menu-mlid-903"><a href="/rest/reference/post/lists/destroy">POST lists/<wbr>destroy</a></li><li class="leaf menu-mlid-904"><a href="/rest/reference/post/lists/update">POST lists/<wbr>update</a></li><li class="leaf menu-mlid-905"><a href="/rest/reference/post/lists/create">POST lists/<wbr>create</a></li><li class="leaf menu-mlid-906"><a href="/rest/reference/get/lists/show">GET lists/<wbr>show</a></li><li class="leaf menu-mlid-907"><a href="/rest/reference/get/lists/subscriptions">GET lists/<wbr>subscriptions</a></li><li class="leaf menu-mlid-908"><a href="/rest/reference/post/lists/members/destroy_all">POST lists/<wbr>members/<wbr>destroy_all</a></li><li class="leaf menu-mlid-984"><a href="/rest/reference/get/lists/ownerships">GET lists/<wbr>ownerships</a></li><li class="leaf menu-mlid-874"><a href="/rest/reference/get/saved_searches/list">GET saved_searches/<wbr>list</a></li><li class="leaf menu-mlid-875"><a href="/rest/reference/get/saved_searches/show/%3Aid">GET saved_searches/<wbr>show/<wbr>:id</a></li><li class="leaf menu-mlid-876"><a href="/rest/reference/post/saved_searches/create">POST saved_searches/<wbr>create</a></li><li class="leaf menu-mlid-877"><a href="/rest/reference/post/saved_searches/destroy/%3Aid">POST saved_searches/<wbr>destroy/<wbr>:id</a></li><li class="leaf menu-mlid-902"><a href="/rest/reference/get/geo/id/%3Aplace_id">GET geo/<wbr>id/<wbr>:place_id</a></li><li class="leaf menu-mlid-909"><a href="/rest/reference/get/geo/reverse_geocode">GET geo/<wbr>reverse_geocode</a></li><li class="leaf menu-mlid-910"><a href="/rest/reference/get/geo/search">GET geo/<wbr>search</a></li><li class="leaf menu-mlid-913"><a href="/rest/reference/post/geo/place">POST geo/<wbr>place</a></li><li class="leaf menu-mlid-878"><a href="/rest/reference/get/trends/place">GET trends/<wbr>place</a></li><li class="leaf menu-mlid-879"><a href="/rest/reference/get/trends/available">GET trends/<wbr>available</a></li><li class="leaf menu-mlid-889"><a href="/rest/reference/get/application/rate_limit_status">GET application/<wbr>rate_limit_status</a></li><li class="leaf menu-mlid-881"><a href="/rest/reference/get/help/configuration">GET help/<wbr>configuration</a></li><li class="leaf menu-mlid-882"><a href="/rest/reference/get/help/languages">GET help/<wbr>languages</a></li><li class="leaf menu-mlid-883"><a href="/rest/reference/get/help/privacy">GET help/<wbr>privacy</a></li><li class="leaf menu-mlid-884"><a href="/rest/reference/get/help/tos">GET help/<wbr>tos</a></li><li class="leaf menu-mlid-880"><a href="/rest/reference/get/trends/closest">GET trends/<wbr>closest</a></li><li class="last leaf menu-mlid-853"><a href="/rest/reference/post/users/report_spam">POST users/<wbr>report_spam</a></li></ul></li><li class="collapsed menu-mlid-2226"><a href="/rest/media">Media API</a></li><li class="collapsed menu-mlid-640"><a href="/rest/collections">Collections API</a></li><li class="collapsed menu-mlid-1402"><a href="/rest/ton">TON API</a></li><li class="last collapsed menu-mlid-836"><a href="/rest/curator">Curator API</a></li></ul></div></div></div></aside></div><div class="PageLayout-content Grid-cell u-size8of12 u-sm-sizeFill u-md-sizeFill"><article class="Content" id="main-content"><header><h1>POST favorites/<wbr>destroy</h1></header><div class="region region-content"><div class="SystemBlock" ><div id="Node--819" class="  Node node node-api-doc clearfix  Node--apiDoc "><div class="Node-content"><div class="Node-content-field Node-apiDocsBody"><div class=" Field FieldName-body FieldType-textWithSummary FieldLabel-hidden "><div class="Field-items"><div class="Field-items-item even " ><p>Note: the <a href="https://blog.twitter.com/2015/hearts-on-twitter" title="Twitter like action blog post announcement">like action was known as favorite</a> before November 3, 2015; the historical naming remains in API methods and object properties.</p><p>Un-likes the status specified in the ID parameter as the authenticating user. Returns the un-liked status in the requested format when successful.</p><p>This process invoked by this method is asynchronous. The immediately returned status may not indicate the resultant liked status of the Tweet. A 200 OK response from this method will indicate whether the intended action was successful or not.</p></div></div></div></div><div class="Node-content-field Node-apiDocsUrl"><h3>Resource URL</h3><code><div class=" Field FieldName-fieldDocResourceUrl FieldType-text FieldLabel-hidden "><div class="Field-items"><div class="Field-items-item even " >https://api.twitter.com/1.1/favorites/destroy.json</div></div></div></code></div><div class="Node-content-field Node-apiDocsResourceInfomation"><h3>Resource Information</h3><div class=" Field FieldName-fieldDocResponseFormats FieldType-listText FieldLabel-above "><div class="Field-label" >Response formats</div><div class="Field-items"><div class="Field-items-item even " >JSON</div></div></div><div class=" Field FieldName-fieldDocRequiredAuth FieldType-listText FieldLabel-above "><div class="Field-label" >Requires authentication?</div><div class="Field-items"><div class="Field-items-item even " >Yes (user context only)</div></div></div><div class=" Field FieldName-fieldDocRateLimited FieldType-listText FieldLabel-above "><div class="Field-label" >Rate limited?</div><div class="Field-items"><div class="Field-items-item even " >Yes</div></div></div></div><div class="Node-content-field Node-apiDocsParams"><div class=" Field FieldName-fieldDocParams FieldType-textLong FieldLabel-above "><h3 class="Field-label" > Parameters</h3><div class="Field-items"><div class="Field-items-item even " ><div class="parameter" id="api-param-status_id"><span class="param">id <span class="required">required</span></span><p>The numerical ID of the desired status.</p><p><strong>Example Values</strong>: <code>123</code></p></div><div class="parameter" id="api-param-include_entities"><span class="param">include_entities <span>optional</span></span><p>The <code>entities</code> node will be omitted when set to <code>false</code>.</p><p><strong>Example Values</strong>: <code>false</code></p></div></div></div></div></div><div class="Node-content-field Node-oauthGenerator"><h3>OAuth Signature Generator</h3><p><a href="https://twitter.com/login">Sign in</a> to see a list of your registered applications.</p></div><div class="Node-content-field Node-apiDocsRequest"><h3>Example Request</h3><code>POST 
+<div class=" Field FieldName-fieldExampleRequest FieldType-textLong FieldLabel-hidden "><div class="Field-items"><div class="Field-items-item even " ><p>https://api.twitter.com/1.1/favorites/destroy.json?id=243138128959913986</p></div></div></div></code></div><div class="Node-content-field Node-apiDocsResult"><div class=" Field FieldName-fieldDocExamples FieldType-textLong FieldLabel-above "><h3 class="Field-label" > Example Result</h3><div class="Field-items"><div class="Field-items-item even " ><p><pre class="brush: javascript">{
+  "contributors": null, 
+  "coordinates": null, 
+  "created_at": "Wed Sep 05 00:07:01 +0000 2012", 
+  "entities": {
+    "hashtags": [], 
+    "urls": [], 
+    "user_mentions": []
+  }, 
+  "favorited": false, 
+  "geo": null, 
+  "id": 243138128959913986, 
+  "id_str": "243138128959913986", 
+  "in_reply_to_screen_name": null, 
+  "in_reply_to_status_id": null, 
+  "in_reply_to_status_id_str": null, 
+  "in_reply_to_user_id": null, 
+  "in_reply_to_user_id_str": null, 
+  "place": null, 
+  "retweet_count": 0, 
+  "retweeted": false, 
+  "source": "<a href="//itunes.apple.com/us/app/twitter/id409789998?mt=12%5C%22" rel="\&quot;nofollow\&quot;">Twitter for Mac</a>", 
+  "text": "That feel when you accidentally type Bash commands into Campfire, and you also make a typo in them.", 
+  "truncated": false, 
+  "user": {
+    "contributors_enabled": false, 
+    "created_at": "Wed Apr 23 20:32:35 +0000 2008", 
+    "default_profile": false, 
+    "default_profile_image": false, 
+    "description": "Developer at GitHub in San Francisco, CA.\r\n\r\nChicken nuggets is like my family.", 
+    "entities": {
+      "description": {
+        "urls": []
+      }, 
+      "url": {
+        "urls": [
+          {
+            "display_url": null, 
+            "expanded_url": null, 
+            "indices": [
+              0, 
+              21
+            ], 
+            "url": "http://jakeboxer.com/"
+          }
+        ]
+      }
+    }, 
+    "favourites_count": 187, 
+    "follow_request_sent": false, 
+    "followers_count": 714, 
+    "following": false, 
+    "friends_count": 327, 
+    "geo_enabled": true, 
+    "id": 14500363, 
+    "id_str": "14500363", 
+    "is_translator": false, 
+    "lang": "en", 
+    "listed_count": 39, 
+    "location": "San Francisco, CA", 
+    "name": "Jake Boxer", 
+    "notifications": false, 
+    "profile_background_color": "352726", 
+    "profile_background_image_url": "http://a0.twimg.com/images/themes/theme5/bg.gif", 
+    "profile_background_image_url_https": "https://si0.twimg.com/images/themes/theme5/bg.gif", 
+    "profile_background_tile": false, 
+    "profile_image_url": "http://a0.twimg.com/profile_images/1621757700/twitter_normal.png", 
+    "profile_image_url_https": "https://si0.twimg.com/profile_images/1621757700/twitter_normal.png", 
+    "profile_link_color": "D02B55", 
+    "profile_sidebar_border_color": "829D5E", 
+    "profile_sidebar_fill_color": "99CC33", 
+    "profile_text_color": "3E4415", 
+    "profile_use_background_image": true, 
+    "protected": false, 
+    "screen_name": "jake_boxer", 
+    "show_all_inline_media": false, 
+    "statuses_count": 5398, 
+    "time_zone": "Eastern Time (US &amp; Canada)", 
+    "url": "http://jakeboxer.com/", 
+    "utc_offset": -18000, 
+    "verified": false
+  }
+}
+</pre></p></div></div></div></div></div></div></div></div></article></div></div></div></section><footer class="Footer  is-narrow Footer--secondary"><div class="Footer-wrap"><div class="region region-footer-sub"><div class="SystemBlock" ><div class="Prefooter Grid"><div class="Prefooter-links Grid-cell u-size4of6 u-sm-sizeFull u-md-sizeFull"><div class="Prefooter-links-column Grid-cell u-size1of6 u-sm-size1of3"><div class="Prefooter-links-column-title">Solutions</div><ul class="Prefooter-links-column-sublinks"><li class="Prefooter-links-column-sublinks-item"><a href="/solutions/customer-service">Customer Service</a></li><li class="Prefooter-links-column-sublinks-item"><a href="/solutions/best-apps">Build Great Apps</a></li><li class="Prefooter-links-column-sublinks-item"><a href="/solutions/tell-great-stories">Tell Great Stories</a></li></ul></div><div class="Prefooter-links-column Grid-cell u-size1of6 u-sm-size1of3"><div class="Prefooter-links-column-title">Fabric</div><ul class="Prefooter-links-column-sublinks"><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/digits">Digits</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/signin">Sign in with Twitter</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/native-social">Twitter Social</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/crashlytics">Crashlytics</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/answers">Answers by Crashlytics</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/beta">Beta by Crashlytics</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/mopub">MoPub</a></li></ul></div><div class="Prefooter-links-column Grid-cell u-size1of6 u-sm-size1of3"><div class="Prefooter-links-column-title">Data &amp; Web</div><ul class="Prefooter-links-column-sublinks"><li class="Prefooter-links-column-sublinks-item"><a href="http://gnip.com">Gnip</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/rest/public">REST APIs</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/streaming/overview">Streaming APIs</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/products/web">Twitter for Websites</a></li></ul></div><div class="Prefooter-links-column Grid-cell u-size1of6 u-sm-size1of3"><div class="Prefooter-links-column-title">Resources</div><ul class="Prefooter-links-column-sublinks"><li class="Prefooter-links-column-sublinks-item"><a href="/overview/documentation">Documentation</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://twittercommunity.com">Forums</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://blog.twitter.com/developer">Blog</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/overview/case-studies">Case Studies</a></li><li class="Prefooter-links-column-sublinks-item"><a href="http://dev.twitter.com/overview/terms">API Terms</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://support.twitter.com/forms/platform">Policy Support</a></li></ul></div><div class="Prefooter-links-column Grid-cell u-size1of6 u-sm-size1of3"><div class="Prefooter-links-column-title">Programs</div><ul class="Prefooter-links-column-sublinks"><li class="Prefooter-links-column-sublinks-item"><a href="https://dev.twitter.com/overview/general/official-partner-program">Official Partner</a></li><li class="Prefooter-links-column-sublinks-item"><a href="/overview/events">Events</a></li><li class="Prefooter-links-column-sublinks-item"><a href="/flight/2014">Flight 2014</a></li></ul></div><div class="Prefooter-links-column Grid-cell u-size1of6 u-sm-size1of3"><div class="Prefooter-links-column-title">Tools</div><ul class="Prefooter-links-column-sublinks"><li class="Prefooter-links-column-sublinks-item"><a href="http://dev.twitter.com/overview/status">API Status</a></li><li class="Prefooter-links-column-sublinks-item"><a href="http://dev.twitter.com/rest/tools/console">API Console</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://apps.twitter.com">Manage Your Apps</a></li><li class="Prefooter-links-column-sublinks-item"><a href="https://cards-dev.twitter.com/validator">Cards Validator</a></li></ul></div></div><div class="Prefooter-info Grid-cell u-size2of6 u-sm-sizeFull u-md-sizeFull"><a class="Prefooter-info-subscribeLink" href="/overview/newsletter-signup">
+      Subscribe to Our Newsletter    </a><div class="Prefooter-info-copyright"><p>Copyright © 2016 Twitter, Inc.</p><p class="Prefooter-info-copyright-reserved">All Rights Reserved</p></div></div></div></div></div></div></footer><footer class="Footer Footer--global">
+  <nav class="Footer-navigation">
+    <ul class="Footer-navigation-items">
+              <li class="Footer-navigation-item">
+          <a href="https://about.twitter.com" class="FooterItem">About</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://about.twitter.com/company" class="FooterItem">Company</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://blog.twitter.com" class="FooterItem">Blog</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://support.twitter.com" class="FooterItem">Help</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="http://status.twitter.com" class="FooterItem">Status</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://about.twitter.com/careers" class="FooterItem">Jobs</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://twitter.com/tos" class="FooterItem">Terms</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://twitter.com/privacy" class="FooterItem">Privacy</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://support.twitter.com/articles/20170514" class="FooterItem">Cookies</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://support.twitter.com/articles/20170451" class="FooterItem">Ads info</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://brand.twitter.com/" class="FooterItem">Brand</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://ads.twitter.com/start?ref=gl-tw-tw-twitter-advertise" class="FooterItem">Advertise</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://business.twitter.com" class="FooterItem">Businesses</a>
+        </li>
+              <li class="Footer-navigation-item">
+          <a href="https://dev.twitter.com" class="FooterItem">Developers</a>
+        </li>
+          </ul>
+  </nav>
+  <div class="Footer-copyright">
+    &copy; 2016 Twitter, Inc.
+  </div>
+</footer>
+</div>
+
+    <script type="text/javascript" src="https://g.twimg.com/js/b774942/js_Rk5YIkK6m2gKTGH-GrMu0pM_PlMKXnI0ktQUgXw1XgA.js"></script>
+<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_WRH7WYq-FQCJT26vr-LZAlWu_t37jPSQ1Sws4gdMfko.js"></script>
+<script type="text/javascript" src="https://platform.twitter.com/oct.js"></script>
+<script type="text/javascript" src="https://g.twimg.com/js/b774942/js_6yE-_uKeO7bidfCOj5hFbBaaInw0QU2U0ekyhBlHU9k.js"></script>
+
+  </body>
+</html>

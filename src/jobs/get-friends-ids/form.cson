@@ -1,0 +1,9 @@
+{
+  angular: [  
+    'data.user_id'
+    'data.screen_name'
+    'data.cursor'
+    'data.stringify_ids'
+    'data.count'
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  type: 'object'
+  title: 'GET lists/subscriptions'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'The amount of results to return per page.'
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Breaks the results into pages.'
+
+}

@@ -1,0 +1,6 @@
+{
+  angular: [  
+    'data.id'
+    'data.trim_user'
+  ]
+}

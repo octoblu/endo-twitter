@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'GET users/lookup'
+  'x-group-name': 'users'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'A comma separated list of screen names, up to 100 are allowed in a single request.'
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'A comma separated list of user IDs, up to 100 are allowed in a single request.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node that may appear within embedded statuses will be disincluded when set to false.'
+
+}

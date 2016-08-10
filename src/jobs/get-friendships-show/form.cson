@@ -1,0 +1,8 @@
+{
+  angular: [  
+    'data.source_id'
+    'data.source_screen_name'
+    'data.target_id'
+    'data.target_screen_name'
+  ]
+}

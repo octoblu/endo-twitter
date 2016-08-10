@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'GET users/show'
+  'x-group-name': 'users'
+  required: ['data']
+  properties:
+    data:
+      required: ['user_id', 'screen_name']
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will be disincluded when set to false.'
+
+}

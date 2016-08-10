@@ -1,0 +1,7 @@
+{
+  angular: [  
+    'data.id'
+    'data.count'
+    'data.trim_user'
+  ]
+}

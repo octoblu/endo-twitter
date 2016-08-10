@@ -1,0 +1,13 @@
+{
+  angular: [  
+    'data.status'
+    'data.in_reply_to_status_id'
+    'data.possibly_sensitive'
+    'data.lat'
+    'data.long'
+    'data.place_id'
+    'data.display_coordinates'
+    'data.trim_user'
+    'data.media_ids'
+  ]
+}

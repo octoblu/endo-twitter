@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'POST lists/members/destroy'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'list_id':
+          type: 'string'
+          title: 'List ID'
+          description: 'The numerical id of the list.'
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'You can identify a list by its slug instead of its numerical id.'
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user to remove from the list.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to remove from the list.'
+        'owner_screen_name':
+          type: 'string'
+          title: 'Owner Screen Name'
+          description: 'The screen name of the user who owns the list being requested by a slug.'
+        'owner_id':
+          type: 'string'
+          title: 'Owner ID'
+          description: 'The user ID of the user who owns the list being requested by a slug.'
+
+}

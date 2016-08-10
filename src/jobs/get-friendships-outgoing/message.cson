@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'GET friendships/outgoing'
+  'x-group-name': 'friendships'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the list of connections to be broken into pages of no more than 5000 IDs at a time.'
+        'stringify_ids':
+          type: 'boolean'
+          title: 'Stringify Ids'
+          description: 'Many programming environments will not consume our Tweet ids due to their size.'
+
+}

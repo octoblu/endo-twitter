@@ -1,0 +1,11 @@
+{
+  angular: [  
+    'data.list_id'
+    'data.slug'
+    'data.name'
+    'data.mode'
+    'data.description'
+    'data.owner_screen_name'
+    'data.owner_id'
+  ]
+}

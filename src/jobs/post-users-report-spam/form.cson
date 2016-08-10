@@ -1,0 +1,6 @@
+{
+  angular: [  
+    'data.screen_name'
+    'data.user_id'
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'POST account/update_profile_image'
+  'x-group-name': 'account'
+  required: ['data']
+  properties:
+    data:
+      required: ['image']
+      type: 'object'
+      properties:
+        'image':
+          type: 'string'
+          title: 'Image'
+          description: 'The avatar image for the profile, base64-encoded.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will not be included when set to false.'
+        'skip_status':
+          type: 'boolean'
+          title: 'Skip Status'
+          description: 'When set to either true, t or 1 statuses will not be included in the returned user objects.'
+
+}

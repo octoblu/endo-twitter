@@ -1,0 +1,40 @@
+{
+  type: 'object'
+  title: 'POST lists/update'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: ['list_id', 'slug']
+      type: 'object'
+      properties:
+        'list_id':
+          type: 'string'
+          title: 'List ID'
+          description: 'The numerical id of the list.'
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'You can identify a list by its slug instead of its numerical id.'
+        'name':
+          type: 'string'
+          title: 'Name'
+          description: 'The name for the list.'
+        'mode':
+          type: 'string'
+          title: 'Mode'
+          description: 'Whether your list is public or private.'
+        'description':
+          type: 'string'
+          title: 'Description'
+          description: 'The description to give the list.'
+        'owner_screen_name':
+          type: 'string'
+          title: 'Owner Screen Name'
+          description: 'The screen name of the user who owns the list being requested by a slug.'
+        'owner_id':
+          type: 'string'
+          title: 'Owner ID'
+          description: 'The user ID of the user who owns the list being requested by a slug.'
+
+}

@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'POST lists/members/destroy_all'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: ['list_id', 'slug']
+      type: 'object'
+      properties:
+        'list_id':
+          type: 'string'
+          title: 'List ID'
+          description: 'The numerical id of the list.'
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'You can identify a list by its slug instead of its numerical id.'
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'A comma separated list of user IDs, up to 100 are allowed in a single request.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'A comma separated list of screen names, up to 100 are allowed in a single request.'
+        'owner_screen_name':
+          type: 'string'
+          title: 'Owner Screen Name'
+          description: 'The screen name of the user who owns the list being requested by a slug.'
+        'owner_id':
+          type: 'string'
+          title: 'Owner ID'
+          description: 'The user ID of the user who owns the list being requested by a slug.'
+
+}

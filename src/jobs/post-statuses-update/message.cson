@@ -1,0 +1,48 @@
+{
+  type: 'object'
+  title: 'POST statuses/update'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: ['status']
+      type: 'object'
+      properties:
+        'status':
+          type: 'string'
+          title: 'Status'
+          description: 'The text of your status update, typically up to 140 characters.'
+        'in_reply_to_status_id':
+          type: 'string'
+          title: 'In Reply To Status ID'
+          description: 'The ID of an existing status that the update is in reply to.'
+        'possibly_sensitive':
+          type: 'boolean'
+          title: 'Possibly Sensitive'
+          description: 'If you upload Tweet media that might be considered sensitive content such as nudity, violence, or medical procedures, you should set this value to true.'
+        'lat':
+          type: 'string'
+          title: 'Lat'
+          description: 'The latitude of the location this tweet refers to.'
+        'long':
+          type: 'string'
+          title: 'Long'
+          description: 'The longitude of the location this tweet refers to.'
+        'place_id':
+          type: 'string'
+          title: 'Place ID'
+          description: 'A place in the world.'
+        'display_coordinates':
+          type: 'boolean'
+          title: 'Display Coordinates'
+          description: 'Whether or not to put a pin on the exact coordinates a tweet has been sent from.'
+        'trim_user':
+          type: 'boolean'
+          title: 'Trim User'
+          description: 'When set to either true, t or 1, each Tweet returned in a timeline will include a user object including only the status authors numerical ID.'
+        'media_ids':
+          type: 'string'
+          title: 'Media Ids'
+          description: 'A list of media_ids to associate with the Tweet.'
+
+}

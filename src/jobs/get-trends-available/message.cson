@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'GET trends/available'
+  'x-group-name': 'trends'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The Yahoo! Where On Earth ID of the location to return trending information for.'
+        'exclude':
+          type: 'string'
+          title: 'Exclude'
+          description: 'Setting this equal to hashtags will remove all hashtags from the trends list.'
+
+}

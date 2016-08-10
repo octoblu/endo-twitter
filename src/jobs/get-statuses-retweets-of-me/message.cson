@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'GET statuses/retweets_of_me'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of records to retrieve.'
+        'since_id':
+          type: 'string'
+          title: 'Since ID'
+          description: 'Returns results with an ID greater than (that is, more recent than) the specified ID.'
+        'max_id':
+          type: 'string'
+          title: 'Max ID'
+          description: 'Returns results with an ID less than (that is, older than) or equal to the specified ID.'
+        'trim_user':
+          type: 'boolean'
+          title: 'Trim User'
+          description: 'When set to either true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The tweet entities node will not be included when set to false.'
+        'include_user_entities':
+          type: 'boolean'
+          title: 'Include User Entities'
+          description: 'The user entities node will not be included when set to false.'
+
+}

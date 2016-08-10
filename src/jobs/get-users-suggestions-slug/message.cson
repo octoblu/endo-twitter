@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'GET users/suggestions/:slug'
+  'x-group-name': 'users'
+  required: ['data']
+  properties:
+    data:
+      required: ['slug']
+      type: 'object'
+      properties:
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'The short name of list or a category'
+        'lang':
+          type: 'string'
+          title: 'Lang'
+          description: 'Restricts the suggested categories to the requested language.'
+
+}

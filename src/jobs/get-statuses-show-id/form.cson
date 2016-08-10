@@ -1,0 +1,8 @@
+{
+  angular: [  
+    'data.id'
+    'data.trim_user'
+    'data.include_my_retweet'
+    'data.include_entities'
+  ]
+}

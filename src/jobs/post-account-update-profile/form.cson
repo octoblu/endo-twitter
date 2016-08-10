@@ -1,0 +1,11 @@
+{
+  angular: [  
+    'data.name'
+    'data.url'
+    'data.location'
+    'data.description'
+    'data.profile_link_color'
+    'data.include_entities'
+    'data.skip_status'
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  type: 'object'
+  title: 'GET statuses/user_timeline'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'since_id':
+          type: 'string'
+          title: 'Since ID'
+          description: 'Returns results with an ID greater than (that is, more recent than) the specified ID.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of tweets to try and retrieve, up to a maximum of 200 per distinct request.'
+        'max_id':
+          type: 'string'
+          title: 'Max ID'
+          description: 'Returns results with an ID less than (that is, older than) or equal to the specified ID.'
+        'trim_user':
+          type: 'boolean'
+          title: 'Trim User'
+          description: 'When set to either true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID.'
+        'exclude_replies':
+          type: 'boolean'
+          title: 'Exclude Replies'
+          description: 'This parameter will prevent replies from appearing in the returned timeline.'
+        'contributor_details':
+          type: 'boolean'
+          title: 'Contributor Details'
+          description: 'This parameter enhances the contributors element of the status response to include the screen_name of the contributor.'
+        'include_rts':
+          type: 'boolean'
+          title: 'Include Rts'
+          description: 'When set to false, the timeline will strip any native retweets (though they will still count toward both the maximal length of the timeline and the slice selected by the count parameter).'
+
+}

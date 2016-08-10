@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'POST friendships/create'
+  'x-group-name': 'friendships'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to befriend.'
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to befriend.'
+        'follow':
+          type: 'boolean'
+          title: 'Follow'
+          description: 'Enable notifications for the target user.'
+
+}

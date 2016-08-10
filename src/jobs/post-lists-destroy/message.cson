@@ -1,0 +1,28 @@
+{
+  type: 'object'
+  title: 'POST lists/destroy'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: ['list_id', 'slug']
+      type: 'object'
+      properties:
+        'owner_screen_name':
+          type: 'string'
+          title: 'Owner Screen Name'
+          description: 'The screen name of the user who owns the list being requested by a slug.'
+        'owner_id':
+          type: 'string'
+          title: 'Owner ID'
+          description: 'The user ID of the user who owns the list being requested by a slug.'
+        'list_id':
+          type: 'string'
+          title: 'List ID'
+          description: 'The numerical id of the list.'
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'You can identify a list by its slug instead of its numerical id.'
+
+}

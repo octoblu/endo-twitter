@@ -1,0 +1,14 @@
+{
+  angular: [  
+    'data.lat'
+    'data.long'
+    'data.query'
+    'data.ip'
+    'data.granularity'
+    'data.accuracy'
+    'data.max_results'
+    'data.contained_within'
+    'data.attribute:street_address'
+    'data.callback'
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'GET geo/id/:place_id'
+  'x-group-name': 'geo'
+  required: ['data']
+  properties:
+    data:
+      required: ['place_id']
+      type: 'object'
+      properties:
+        'place_id':
+          type: 'string'
+          title: 'Place ID'
+          description: 'A place in the world.'
+
+}

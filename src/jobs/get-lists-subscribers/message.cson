@@ -1,0 +1,44 @@
+{
+  type: 'object'
+  title: 'GET lists/subscribers'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: ['list_id', 'slug']
+      type: 'object'
+      properties:
+        'list_id':
+          type: 'string'
+          title: 'List ID'
+          description: 'The numerical id of the list.'
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'You can identify a list by its slug instead of its numerical id.'
+        'owner_screen_name':
+          type: 'string'
+          title: 'Owner Screen Name'
+          description: 'The screen name of the user who owns the list being requested by a slug.'
+        'owner_id':
+          type: 'string'
+          title: 'Owner ID'
+          description: 'The user ID of the user who owns the list being requested by a slug.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of results to return per page (see cursor below).'
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Breaks the results into pages.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'When set to either true, t or 1, each tweet will include a node called “entities”.'
+        'skip_status':
+          type: 'boolean'
+          title: 'Skip Status'
+          description: 'When set to either true, t or 1 statuses will not be included in the returned user objects.'
+
+}

@@ -1,0 +1,13 @@
+{
+  angular: [  
+    'data.user_id'
+    'data.screen_name'
+    'data.since_id'
+    'data.count'
+    'data.max_id'
+    'data.trim_user'
+    'data.exclude_replies'
+    'data.contributor_details'
+    'data.include_rts'
+  ]
+}

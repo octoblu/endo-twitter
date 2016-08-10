@@ -1,0 +1,28 @@
+{
+  type: 'object'
+  title: 'GET statuses/lookup'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'A comma separated list of tweet IDs, up to 100 are allowed in a single request.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node that may appear within embedded statuses will be disincluded when set to false.'
+        'trim_user':
+          type: 'boolean'
+          title: 'Trim User'
+          description: 'When set to either true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID.'
+        'map':
+          type: 'boolean'
+          title: 'Map'
+          description: 'When using the map parameter, tweets that do not exist or cannot be viewed by the current user will still have their key represented but with an explicitly null value paired with it'
+
+}

@@ -1,0 +1,40 @@
+{
+  type: 'object'
+  title: 'POST geo/place'
+  'x-group-name': 'geo'
+  required: ['data']
+  properties:
+    data:
+      required: ['name', 'contained_within', 'token', 'lat', 'long']
+      type: 'object'
+      properties:
+        'name':
+          type: 'string'
+          title: 'Name'
+          description: 'The name a place is known as.'
+        'contained_within':
+          type: 'string'
+          title: 'Contained Within'
+          description: 'The place_id within which the new place can be found.'
+        'token':
+          type: 'string'
+          title: 'Token'
+          description: 'The token found in the response from geo/similar_places.'
+        'lat':
+          type: 'string'
+          title: 'Lat'
+          description: 'The latitude the place is located at.'
+        'long':
+          type: 'string'
+          title: 'Long'
+          description: 'The longitude the place is located at.'
+        'attribute:street_address':
+          type: 'string'
+          title: 'Attribute:Street Address'
+          description: 'This parameter searches for places which have this given street address.'
+        'callback':
+          type: 'string'
+          title: 'Callback'
+          description: 'If supplied, the response will use the JSONP format with a callback of the given name.'
+
+}

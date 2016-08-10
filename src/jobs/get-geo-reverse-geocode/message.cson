@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'GET geo/reverse_geocode'
+  'x-group-name': 'geo'
+  required: ['data']
+  properties:
+    data:
+      required: ['lat', 'long']
+      type: 'object'
+      properties:
+        'lat':
+          type: 'string'
+          title: 'Lat'
+          description: 'The latitude to search around.'
+        'long':
+          type: 'string'
+          title: 'Long'
+          description: 'The longitude to search around.'
+        'accuracy':
+          type: 'string'
+          title: 'Accuracy'
+          description: 'A hint on the “region” in which to search.'
+        'granularity':
+          type: 'string'
+          title: 'Granularity'
+          description: 'This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country.'
+        'max_results':
+          type: 'string'
+          title: 'Max Results'
+          description: 'A hint as to the number of results to return.'
+        'callback':
+          type: 'string'
+          title: 'Callback'
+          description: 'If supplied, the response will use the JSONP format with a callback of the given name.'
+
+}

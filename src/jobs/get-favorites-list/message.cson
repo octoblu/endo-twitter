@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'GET favorites/list'
+  'x-group-name': 'favorites'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of records to retrieve.'
+        'since_id':
+          type: 'string'
+          title: 'Since ID'
+          description: 'Returns results with an ID greater than (that is, more recent than) the specified ID.'
+        'max_id':
+          type: 'string'
+          title: 'Max ID'
+          description: 'Returns results with an ID less than (that is, older than) or equal to the specified ID.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will be omitted when set to false.'
+
+}

@@ -1,0 +1,7 @@
+{
+  angular: [  
+    'data.include_entities'
+    'data.skip_status'
+    'data.cursor'
+  ]
+}

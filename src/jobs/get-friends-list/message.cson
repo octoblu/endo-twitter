@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'GET friends/list'
+  'x-group-name': 'friends'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the results to be broken into pages.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'The number of users to return per page, up to a maximum of 200.'
+        'skip_status':
+          type: 'boolean'
+          title: 'Skip Status'
+          description: 'When set to either true, t or 1 statuses will not be included in the returned user objects.'
+        'include_user_entities':
+          type: 'boolean'
+          title: 'Include User Entities'
+          description: 'The user object entities node will be disincluded when set to false.'
+
+}

@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'GET users/profile_banner'
+  'x-group-name': 'users'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results.'
+
+}

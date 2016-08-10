@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'POST direct_messages/new'
+  'x-group-name': 'direct_messages'
+  required: ['data']
+  properties:
+    data:
+      required: ['text']
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user who should receive the direct message.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user who should receive the direct message.'
+        'text':
+          type: 'string'
+          title: 'Text'
+          description: 'The text of your direct message.'
+
+}

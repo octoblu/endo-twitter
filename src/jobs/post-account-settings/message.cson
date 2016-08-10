@@ -1,0 +1,40 @@
+{
+  type: 'object'
+  title: 'POST account/settings'
+  'x-group-name': 'account'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'sleep_time_enabled':
+          type: 'boolean'
+          title: 'Sleep Time Enabled'
+          description: 'When set to true, t or 1, will enable sleep time for the user.'
+        'start_sleep_time':
+          type: 'string'
+          title: 'Start Sleep Time'
+          description: 'The hour that sleep time should begin if it is enabled.'
+        'end_sleep_time':
+          type: 'string'
+          title: 'End Sleep Time'
+          description: 'The hour that sleep time should end if it is enabled.'
+        'time_zone':
+          type: 'string'
+          title: 'Time Zone'
+          description: 'The timezone dates and times should be displayed in for the user.'
+        'trend_location_woeid':
+          type: 'string'
+          title: 'Trend Location Woeid'
+          description: 'The Yahoo! Where On Earth ID to use as the user’s default trend location.'
+        'allow_contributor_request':
+          type: 'string'
+          title: 'Allow Contributor Request'
+          description: 'Whether to allow others to include user as contributor.'
+        'lang':
+          type: 'string'
+          title: 'Lang'
+          description: 'The language which Twitter should render in for this user.'
+
+}

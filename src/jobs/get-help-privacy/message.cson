@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'GET help/privacy'
+  'x-group-name': 'help'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'resources':
+          type: 'string'
+          title: 'Resources'
+          description: 'A comma-separated list of resource families you want to know the current rate limit disposition for.'
+
+}

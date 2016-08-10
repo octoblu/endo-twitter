@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'GET users/suggestions/:slug/members'
+  'x-group-name': 'users'
+  required: ['data']
+  properties:
+    data:
+      required: ['slug']
+      type: 'object'
+      properties:
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'The short name of list or a category'
+
+}

@@ -1,0 +1,13 @@
+{
+  angular: [  
+    'data.list_id'
+    'data.slug'
+    'data.owner_screen_name'
+    'data.owner_id'
+    'data.since_id'
+    'data.max_id'
+    'data.count'
+    'data.include_entities'
+    'data.include_rts'
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  angular: [  
+    'data.banner'
+    'data.width'
+    'data.height'
+    'data.offset_left'
+    'data.offset_top'
+  ]
+}

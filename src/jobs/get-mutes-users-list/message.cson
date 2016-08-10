@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'GET mutes/users/list'
+  'x-group-name': 'mutes'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will not be included when set to false.'
+        'skip_status':
+          type: 'boolean'
+          title: 'Skip Status'
+          description: 'When set to either true, t or 1 statuses will not be included in the returned user objects.'
+
+}

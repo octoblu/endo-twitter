@@ -1,0 +1,8 @@
+{
+  angular: [  
+    'data.id'
+    'data.include_entities'
+    'data.trim_user'
+    'data.map'
+  ]
+}

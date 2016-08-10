@@ -1,0 +1,6 @@
+{
+  angular: [  
+    'data.cursor'
+    'data.stringify_ids'
+  ]
+}

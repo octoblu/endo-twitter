@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'GET blocks/ids'
+  'x-group-name': 'blocks'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'stringify_ids':
+          type: 'boolean'
+          title: 'Stringify Ids'
+          description: 'Many programming environments will not consume our ids due to their size.'
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time.'
+
+}

@@ -1,0 +1,7 @@
+{
+  angular: [  
+    'data.name'
+    'data.mode'
+    'data.description'
+  ]
+}

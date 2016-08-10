@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'GET lists/list'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'reverse':
+          type: 'boolean'
+          title: 'Reverse'
+          description: 'Set this to true if you would like owned lists to be returned first.'
+
+}

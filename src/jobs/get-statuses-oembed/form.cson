@@ -1,0 +1,14 @@
+{
+  angular: [  
+    'data.url'
+    'data.maxwidth'
+    'data.hide_media'
+    'data.hide_thread'
+    'data.omit_script'
+    'data.align'
+    'data.related'
+    'data.lang'
+    'data.widget_type'
+    'data.hide_tweet'
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  type: 'object'
+  title: 'GET geo/search'
+  'x-group-name': 'geo'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'lat':
+          type: 'string'
+          title: 'Lat'
+          description: 'The latitude to search around.'
+        'long':
+          type: 'string'
+          title: 'Long'
+          description: 'The longitude to search around.'
+        'query':
+          type: 'string'
+          title: 'Query'
+          description: 'Free-form text to match against while executing a geo-based query, best suited for finding nearby locations by name.'
+        'ip':
+          type: 'string'
+          title: 'Ip'
+          description: 'An IP address.'
+        'granularity':
+          type: 'string'
+          title: 'Granularity'
+          description: 'This is the minimal granularity of place types to return and must be one of: poi, neighborhood, city, admin or country.'
+        'accuracy':
+          type: 'string'
+          title: 'Accuracy'
+          description: 'A hint on the “region” in which to search.'
+        'max_results':
+          type: 'string'
+          title: 'Max Results'
+          description: 'A hint as to the number of results to return.'
+        'contained_within':
+          type: 'string'
+          title: 'Contained Within'
+          description: 'This is the place_id which you would like to restrict the search results to.'
+        'attribute:street_address':
+          type: 'string'
+          title: 'Attribute:Street Address'
+          description: 'This parameter searches for places which have this given street address.'
+        'callback':
+          type: 'string'
+          title: 'Callback'
+          description: 'If supplied, the response will use the JSONP format with a callback of the given name.'
+
+}

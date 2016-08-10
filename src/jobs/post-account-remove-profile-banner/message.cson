@@ -1,0 +1,28 @@
+{
+  type: 'object'
+  title: 'POST account/remove_profile_banner'
+  'x-group-name': 'account'
+  required: ['data']
+  properties:
+    data:
+      required: ['q']
+      type: 'object'
+      properties:
+        'q':
+          type: 'string'
+          title: 'Query'
+          description: 'The search query to run against people search.'
+        'page':
+          type: 'string'
+          title: 'Page'
+          description: 'Specifies the page of results to retrieve.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'The number of potential user results to retrieve per page.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will be disincluded from embedded tweet objects when set to false.'
+
+}

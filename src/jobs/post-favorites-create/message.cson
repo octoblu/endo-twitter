@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'POST favorites/create'
+  'x-group-name': 'favorites'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The numerical ID of the desired status.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will be omitted when set to false.'
+
+}

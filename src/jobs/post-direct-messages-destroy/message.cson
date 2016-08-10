@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'POST direct_messages/destroy'
+  'x-group-name': 'direct_messages'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The ID of the direct message to delete.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will not be included when set to false.'
+
+}

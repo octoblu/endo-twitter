@@ -1,0 +1,9 @@
+{
+  angular: [  
+    'data.since_id'
+    'data.max_id'
+    'data.count'
+    'data.page'
+    'data.include_entities'
+  ]
+}

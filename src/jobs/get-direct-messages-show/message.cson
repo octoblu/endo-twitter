@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'GET direct_messages/show'
+  'x-group-name': 'direct_messages'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The ID of the direct message.'
+
+}

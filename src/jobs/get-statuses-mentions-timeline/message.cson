@@ -1,0 +1,36 @@
+{
+  type: 'object'
+  title: 'GET statuses/mentions_timeline'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of tweets to try and retrieve, up to a maximum of 200.'
+        'since_id':
+          type: 'string'
+          title: 'Since ID'
+          description: 'Returns results with an ID greater than (that is, more recent than) the specified ID.'
+        'max_id':
+          type: 'string'
+          title: 'Max ID'
+          description: 'Returns results with an ID less than (that is, older than) or equal to the specified ID.'
+        'trim_user':
+          type: 'boolean'
+          title: 'Trim User'
+          description: 'When set to either true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID.'
+        'contributor_details':
+          type: 'boolean'
+          title: 'Contributor Details'
+          description: 'This parameter enhances the contributors element of the status response to include the screen_name of the contributor.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will be disincluded when set to false.'
+
+}

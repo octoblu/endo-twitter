@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'GET saved_searches/show/:id'
+  'x-group-name': 'saved_searches'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The ID of the saved search.'
+
+}

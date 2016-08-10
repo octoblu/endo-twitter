@@ -1,0 +1,12 @@
+{
+  angular: [  
+    'data.owner_screen_name'
+    'data.owner_id'
+    'data.list_id'
+    'data.slug'
+    'data.user_id'
+    'data.screen_name'
+    'data.include_entities'
+    'data.skip_status'
+  ]
+}

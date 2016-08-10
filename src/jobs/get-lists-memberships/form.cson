@@ -1,0 +1,9 @@
+{
+  angular: [  
+    'data.user_id'
+    'data.screen_name'
+    'data.count'
+    'data.cursor'
+    'data.filter_to_owned_lists'
+  ]
+}

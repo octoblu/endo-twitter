@@ -1,0 +1,10 @@
+{
+  angular: [  
+    'data.user_id'
+    'data.screen_name'
+    'data.cursor'
+    'data.count'
+    'data.skip_status'
+    'data.include_user_entities'
+  ]
+}

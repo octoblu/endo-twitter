@@ -1,0 +1,10 @@
+{
+  angular: [  
+    'data.lat'
+    'data.long'
+    'data.accuracy'
+    'data.granularity'
+    'data.max_results'
+    'data.callback'
+  ]
+}

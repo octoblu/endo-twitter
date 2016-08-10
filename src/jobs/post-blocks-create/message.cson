@@ -1,0 +1,28 @@
+{
+  type: 'object'
+  title: 'POST blocks/create'
+  'x-group-name': 'blocks'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the potentially blocked user.'
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the potentially blocked user.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will not be included when set to false.'
+        'skip_status':
+          type: 'boolean'
+          title: 'Skip Status'
+          description: 'When set to either true, t or 1 statuses will not be included in the returned user objects.'
+
+}

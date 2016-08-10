@@ -1,0 +1,15 @@
+{
+  angular: [  
+    'data.q'
+    'data.geocode'
+    'data.lang'
+    'data.locale'
+    'data.result_type'
+    'data.count'
+    'data.until'
+    'data.since_id'
+    'data.max_id'
+    'data.include_entities'
+    'data.callback'
+  ]
+}

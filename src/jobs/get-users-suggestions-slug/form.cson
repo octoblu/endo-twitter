@@ -1,0 +1,6 @@
+{
+  angular: [  
+    'data.slug'
+    'data.lang'
+  ]
+}

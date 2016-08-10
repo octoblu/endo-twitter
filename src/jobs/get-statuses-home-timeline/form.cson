@@ -1,0 +1,11 @@
+{
+  angular: [  
+    'data.count'
+    'data.since_id'
+    'data.max_id'
+    'data.trim_user'
+    'data.exclude_replies'
+    'data.contributor_details'
+    'data.include_entities'
+  ]
+}

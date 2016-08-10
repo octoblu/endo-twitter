@@ -1,0 +1,32 @@
+{
+  type: 'object'
+  title: 'GET friends/ids'
+  'x-group-name': 'friends'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'user_id':
+          type: 'string'
+          title: 'User ID'
+          description: 'The ID of the user for whom to return results for.'
+        'screen_name':
+          type: 'string'
+          title: 'Screen Name'
+          description: 'The screen name of the user for whom to return results for.'
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the list of connections to be broken into pages of no more than 5000 IDs at a time.'
+        'stringify_ids':
+          type: 'boolean'
+          title: 'Stringify Ids'
+          description: 'Many programming environments will not consume our Tweet ids due to their size.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of IDs attempt retrieval of, up to a maximum of 5,000 per distinct request.'
+
+}

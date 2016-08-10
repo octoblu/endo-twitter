@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'POST statuses/retweet/:id'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The numerical ID of the desired status.'
+        'trim_user':
+          type: 'boolean'
+          title: 'Trim User'
+          description: 'When set to either true, t or 1, each tweet returned in a timeline will include a user object including only the status authors numerical ID.'
+
+}

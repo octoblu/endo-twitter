@@ -1,0 +1,24 @@
+{
+  type: 'object'
+  title: 'GET statuses/retweeters/ids'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: ['id']
+      type: 'object'
+      properties:
+        'id':
+          type: 'string'
+          title: 'ID'
+          description: 'The numerical ID of the desired status.'
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the list of IDs to be broken into pages of no more than 100 IDs at a time.'
+        'stringify_ids':
+          type: 'boolean'
+          title: 'Stringify Ids'
+          description: 'Many programming environments will not consume our ids due to their size.'
+
+}

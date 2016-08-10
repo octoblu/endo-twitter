@@ -1,0 +1,32 @@
+{
+  type: 'object'
+  title: 'GET direct_messages'
+  'x-group-name': 'direct_messages'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'since_id':
+          type: 'string'
+          title: 'Since ID'
+          description: 'Returns results with an ID greater than (that is, more recent than) the specified ID.'
+        'max_id':
+          type: 'string'
+          title: 'Max ID'
+          description: 'Returns results with an ID less than (that is, older than) or equal to the specified ID.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of direct messages to try and retrieve, up to a maximum of 200.'
+        'include_entities':
+          type: 'boolean'
+          title: 'Include Entities'
+          description: 'The entities node will not be included when set to false.'
+        'skip_status':
+          type: 'boolean'
+          title: 'Skip Status'
+          description: 'When set to either true, t or 1 statuses will not be included in the returned user objects.'
+
+}

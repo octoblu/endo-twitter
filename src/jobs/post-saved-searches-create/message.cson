@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'POST saved_searches/create'
+  'x-group-name': 'saved_searches'
+  required: ['data']
+  properties:
+    data:
+      required: ['query']
+      type: 'object'
+      properties:
+        'query':
+          type: 'string'
+          title: 'Query'
+          description: 'The query of the search the user would like to save.'
+
+}

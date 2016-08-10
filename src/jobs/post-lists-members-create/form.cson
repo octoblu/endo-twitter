@@ -1,0 +1,10 @@
+{
+  angular: [  
+    'data.list_id'
+    'data.slug'
+    'data.user_id'
+    'data.screen_name'
+    'data.owner_screen_name'
+    'data.owner_id'
+  ]
+}

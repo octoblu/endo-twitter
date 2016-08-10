@@ -1,0 +1,48 @@
+{
+  type: 'object'
+  title: 'GET lists/statuses'
+  'x-group-name': 'lists'
+  required: ['data']
+  properties:
+    data:
+      required: ['list_id', 'slug']
+      type: 'object'
+      properties:
+        'list_id':
+          type: 'string'
+          title: 'List ID'
+          description: 'The numerical id of the list.'
+        'slug':
+          type: 'string'
+          title: 'Slug'
+          description: 'You can identify a list by its slug instead of its numerical id.'
+        'owner_screen_name':
+          type: 'string'
+          title: 'Owner Screen Name'
+          description: 'The screen name of the user who owns the list being requested by a slug.'
+        'owner_id':
+          type: 'string'
+          title: 'Owner ID'
+          description: 'The user ID of the user who owns the list being requested by a slug.'
+        'since_id':
+          type: 'string'
+          title: 'Since ID'
+          description: 'Returns results with an ID greater than (that is, more recent than) the specified ID.'
+        'max_id':
+          type: 'string'
+          title: 'Max ID'
+          description: 'Returns results with an ID less than (that is, older than) or equal to the specified ID.'
+        'count':
+          type: 'integer'
+          title: 'Count'
+          description: 'Specifies the number of results to retrieve per “page.'
+        'include_entities':
+          type: 'string'
+          title: 'Include Entities'
+          description: 'Entities are ON by default in API 1.'
+        'include_rts':
+          type: 'boolean'
+          title: 'Include Rts'
+          description: 'When set to either true, t or 1, the list timeline will contain native retweets (if they exist) in addition to the standard stream of tweets.'
+
+}

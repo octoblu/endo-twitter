@@ -1,0 +1,52 @@
+{
+  type: 'object'
+  title: 'GET statuses/oembed'
+  'x-group-name': 'statuses'
+  required: ['data']
+  properties:
+    data:
+      required: ['url']
+      type: 'object'
+      properties:
+        'url':
+          type: 'string'
+          title: 'Url'
+          description: 'The URL of the Tweet to be embedded.'
+        'maxwidth':
+          type: 'string'
+          title: 'Maxwidth'
+          description: 'The maximum width of a rendered Tweet in whole pixels.'
+        'hide_media':
+          type: 'boolean'
+          title: 'Hide Media'
+          description: 'When set to true, t or 1 links in a Tweet are not expanded to photo, video, or link previews.'
+        'hide_thread':
+          type: 'boolean'
+          title: 'Hide Thread'
+          description: 'When set to true, t or 1 a collapsed version of the previous Tweet in a conversation thread will not be displayed when the requested Tweet is in reply to another Tweet.'
+        'omit_script':
+          type: 'boolean'
+          title: 'Omit Script'
+          description: 'When set to true, t or 1 the &lt;script&gt; responsible for loading widgets.'
+        'align':
+          type: 'string'
+          title: 'Align'
+          description: 'Specifies whether the embedded Tweet should be floated left, right, or center in the page relative to the parent element.'
+        'related':
+          type: 'string'
+          title: 'Related'
+          description: 'A comma-separated list of Twitter usernames related to your content.'
+        'lang':
+          type: 'string'
+          title: 'Lang'
+          description: 'Request returned HTML and a rendered Tweet in the specified Twitter language supported by embedded Tweets.'
+        'widget_type':
+          type: 'string'
+          title: 'Widget Type'
+          description: 'Set to video to return a Twitter Video embed for the given Tweet.'
+        'hide_tweet':
+          type: 'string'
+          title: 'Hide Tweet'
+          description: 'Applies to video type only.'
+
+}

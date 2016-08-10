@@ -1,0 +1,11 @@
+{
+  angular: [  
+    'data.sleep_time_enabled'
+    'data.start_sleep_time'
+    'data.end_sleep_time'
+    'data.time_zone'
+    'data.trend_location_woeid'
+    'data.allow_contributor_request'
+    'data.lang'
+  ]
+}

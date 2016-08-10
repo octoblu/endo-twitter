@@ -1,0 +1,16 @@
+{
+  type: 'object'
+  title: 'GET mutes/users/ids'
+  'x-group-name': 'mutes'
+  required: ['data']
+  properties:
+    data:
+      required: []
+      type: 'object'
+      properties:
+        'cursor':
+          type: 'string'
+          title: 'Cursor'
+          description: 'Causes the list of IDs to be broken into pages of no more than 5000 IDs at a time.'
+
+}
