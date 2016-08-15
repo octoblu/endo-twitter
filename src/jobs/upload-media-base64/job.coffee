@@ -12,7 +12,7 @@ class UploadMedia
     })
 
   do: ({data}, callback) =>
-    return callback @_userError(422, 'Status is required') unless data.status?
+    return callback @_userError(422, 'media_data is required') unless data.media_data?
 
     @twitter.post 'media/upload', data, (error, tweet, response) =>
       return callback error if error?
