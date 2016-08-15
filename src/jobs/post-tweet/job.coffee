@@ -2,7 +2,7 @@ http    = require 'http'
 _       = require 'lodash'
 Twitter = require 'twitter'
 
-class StatusesUpdate
+class PostTweet
   constructor: ({@encrypted}) ->
     @twitter = new Twitter({
       consumer_key:        process.env.ENDO_TWITTER_TWITTER_CLIENT_ID
@@ -28,4 +28,4 @@ class StatusesUpdate
     error.code = code
     return error
 
-module.exports = StatusesUpdate
+module.exports = PostTweet

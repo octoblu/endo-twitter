@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'Statuses Update'
+  title: 'Post Tweet'
   'x-group-name': 'Tweets'
   required: ['data']
   properties:
@@ -47,5 +47,5 @@
           type: 'boolean'
           title: 'Trim User'
           description: 'When set to either true each Tweet returned in a timeline will include a user object including only the status authors numerical ID.'
-        
+
 }
