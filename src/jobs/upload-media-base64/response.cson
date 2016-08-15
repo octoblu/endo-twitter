@@ -1,0 +1,17 @@
+{
+  type: 'object'
+  required: ['metadata', 'data']
+  properties:
+    data:
+      type: 'array'
+      items:
+        type: 'object'
+        required: ['media_id', 'media_id_string', 'size']
+        properties:
+          media_id:
+            type: 'integer'
+          media_id_string:
+            type: 'string'
+          size:
+            type: 'integer'
+}

@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  title: 'Upload Media (base64)'
+  'x-group-name': 'Media'
+  required: ['data']
+  properties:
+    data:
+      required: ['media_data']
+      type: 'object'
+      properties:
+        media_data:
+          description: 'The base64-encoded file content being uploaded'
+          title: 'Base64 Encoded File'
+          type: 'string'
+        additional_owners:
+          description: 'A comma-separated list of user IDs to set as additional owners allowed to use the returned media_id in Tweets or Cards. Up to 100 additional owners may be specified.'
+          title: 'Additional Owners'
+          type: 'string'
+
+}
