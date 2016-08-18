@@ -24,7 +24,7 @@ class Command
 
     return {
       apiStrategy:     apiStrategy
-      deviceType:      'endo-twitter'
+      deviceType:      'endo:twitter'
       disableLogging:  process.env.DISABLE_LOGGING == "true"
       meshbluConfig:   meshbluConfig
       messageHandler:  new MessageHandler
