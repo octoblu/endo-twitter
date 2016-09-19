@@ -1,10 +1,13 @@
 # endo-twitter
 
+[![Build Status](https://travis-ci.org/octoblu/endo-twitter.svg?branch=master)](https://travis-ci.org/octoblu/endo-twitter)
+[![Test Coverage](https://codecov.io/gh/octoblu/endo-twitter/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/endo-twitter)
 [![Dependency status](http://img.shields.io/david/octoblu/endo-twitter.svg?style=flat)](https://david-dm.org/octoblu/endo-twitter)
 [![devDependency Status](http://img.shields.io/david/dev/octoblu/endo-twitter.svg?style=flat)](https://david-dm.org/octoblu/endo-twitter#info=devDependencies)
-[![Build Status](http://img.shields.io/travis/octoblu/endo-twitter.svg?style=flat&branch=master)](https://travis-ci.org/octoblu/endo-twitter)
+[![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
 
 [![NPM](https://nodei.co/npm/endo-twitter.svg?style=flat)](https://npmjs.org/package/endo-twitter)
+
 
 ## Installing
 
