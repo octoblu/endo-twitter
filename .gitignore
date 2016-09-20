@@ -32,3 +32,4 @@ meshblu.json
 #dev files
 .*-dev
 npm-debug.log.*
+.nyc_output
