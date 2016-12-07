@@ -14,8 +14,12 @@ class SearchTweets
   do: ({data}, callback) =>
     return callback @_userError(422, 'Query is required') unless data.q?
 
-    @twitter.get 'search/tweets', data, (error, tweets, response) =>
-      return callback error if error?
+    @twitter.get 'search/tweets', data, (errors, tweets, response) =>
+      if errors?
+        error = _.first errors
+        error.code = response.code
+        return callback error
+
       return callback null, {
         metadata:
           code: 200

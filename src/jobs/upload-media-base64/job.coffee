@@ -14,7 +14,12 @@ class UploadMedia
   do: ({data}, callback) =>
     return callback @_userError(422, 'media_data is required') unless data.media_data?
 
-    @twitter.post 'media/upload', data, (error, tweet, response) =>
+    @twitter.post 'media/upload', data, (errors, tweet, response) =>
+      if errors?
+        error = _.first errors
+        error.code = response.code
+        return callback error
+
       return callback error if error?
       return callback null, {
         metadata:

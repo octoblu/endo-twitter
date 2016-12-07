@@ -14,8 +14,12 @@ class PostTweet
   do: ({data}, callback) =>
     return callback @_userError(422, 'Status is required') unless data.status?
 
-    @twitter.post 'statuses/update', data, (error, tweet, response) =>
-      return callback error if error?
+    @twitter.post 'statuses/update', data, (errors, tweet, response) =>
+      if errors?
+        error = _.first errors
+        error.code = response.code
+        return callback error
+
       return callback null, {
         metadata:
           code: 200
